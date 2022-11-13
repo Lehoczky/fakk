@@ -1,0 +1,16 @@
+{
+  "name": "@lehoczky/fakk",
+  "version": "1.0.0",
+  "description": "",
+  "bin": {
+    "fakk": "index.js"
+  },
+  "main": "index.js",
+  "scripts": {},
+  "type": "module",
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.11.9"
+  }
+}
