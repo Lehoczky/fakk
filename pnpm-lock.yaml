@@ -31,6 +31,9 @@ devDependencies:
   rollup:
     specifier: ^3.25.1
     version: 3.25.1
+  rollup-plugin-preserve-shebang:
+    specifier: ^1.0.1
+    version: 1.0.1
   rollup-plugin-typescript2:
     specifier: ^0.35.0
     version: 0.35.0(rollup@3.25.1)(typescript@5.1.6)
@@ -586,6 +589,15 @@ packages:
       yallist: 4.0.0
     dev: true
 
+  /magic-string@0.25.9:
+    resolution:
+      {
+        integrity: sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==,
+      }
+    dependencies:
+      sourcemap-codec: 1.4.8
+    dev: true
+
   /make-dir@3.1.0:
     resolution:
       {
@@ -724,6 +736,15 @@ packages:
       }
     dev: true
 
+  /rollup-plugin-preserve-shebang@1.0.1:
+    resolution:
+      {
+        integrity: sha512-gk7ExGBqvUinhgrvldKHkAKXXwRkWMXMZymNkrtn50uBgHITlhRjhnKmbNGwAIc4Bzgl3yLv7/8Fhi/XeHhFKg==,
+      }
+    dependencies:
+      magic-string: 0.25.9
+    dev: true
+
   /rollup-plugin-typescript2@0.35.0(rollup@3.25.1)(typescript@5.1.6):
     resolution:
       {
@@ -813,6 +834,14 @@ packages:
         integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==,
       }
     engines: { node: ">=0.10.0" }
+    dev: true
+
+  /sourcemap-codec@1.4.8:
+    resolution:
+      {
+        integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==,
+      }
+    deprecated: Please use @jridgewell/sourcemap-codec instead
     dev: true
 
   /strip-final-newline@3.0.0:

@@ -1,5 +1,6 @@
 import { defineConfig } from "rollup"
 import typescript from "rollup-plugin-typescript2"
+import shebang from "rollup-plugin-preserve-shebang"
 
 export default defineConfig({
   input: "src/index.ts",
@@ -7,5 +8,5 @@ export default defineConfig({
     file: "dist/index.mjs",
     format: "module",
   },
-  plugins: [typescript()],
+  plugins: [typescript(), shebang()],
 })
