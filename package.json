@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "dev": "tsx src/index.ts",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "prepare": "husky install"
   },
   "type": "module",
   "license": "MIT",
@@ -21,7 +22,8 @@
     "rollup": "^3.25.1",
     "rollup-plugin-typescript2": "^0.35.0",
     "tsx": "^3.12.7",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "husky": "^8.0.0"
   },
   "publishConfig": {
     "access": "public"
