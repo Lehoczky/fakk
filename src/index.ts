@@ -15,12 +15,7 @@ function removeGitHooks() {
   try {
     execaSync("git config --unset core.hooksPath")
     consola.success("Git hooks had been removes successfully")
-  } catch (error) {
-    const errorMessage: string = error.toString()
-    consola.error(errorMessage)
-
-    process.exit(1)
-  }
+  } catch (error) {}
 }
 
 function undoLastCommit() {
