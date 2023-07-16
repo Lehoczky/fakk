@@ -3,18 +3,24 @@
   "version": "1.0.0",
   "description": "Undo your last commit with ease",
   "bin": {
-    "fakk": "index.js"
+    "fakk": "dist/index.mjs"
   },
-  "main": "index.js",
   "files": [
-    "index.js"
+    "dist/"
   ],
-  "scripts": {},
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "rollup -c"
+  },
   "type": "module",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^18.11.9",
-    "prettier": "^2.7.1"
+    "@types/node": "^18.16.19",
+    "prettier": "^2.8.8",
+    "rollup": "^3.25.1",
+    "rollup-plugin-typescript2": "^0.35.0",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.6"
   },
   "publishConfig": {
     "access": "public"
@@ -28,5 +34,5 @@
     "url": "https://github.com/Lehoczky/fakk.git",
     "type": "git"
   },
-  "packageManager": "pnpm@7.13.2"
+  "packageManager": "pnpm@8.6.7"
 }
