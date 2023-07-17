@@ -14,7 +14,7 @@ if (argv._.includes("hooks")) {
 function removeGitHooks() {
   try {
     execaSync("git config --unset core.hooksPath")
-    consola.success("Git hooks had been removes successfully")
+    consola.success("Git hooks are removed successfully")
   } catch (error) {}
 }
 
