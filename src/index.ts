@@ -36,7 +36,7 @@ function undoLastCommit() {
       errorMessage.includes("unknown revision or path not in the working tree")
     ) {
       consola.error(
-        "You must have at least 2 commits on this branch to use this command"
+        "You must have at least 2 commits on this branch to use this command",
       )
     } else {
       consola.error(errorMessage)
@@ -52,7 +52,7 @@ function help() {
 
 \`fakk\`       - undo last commit
 \`fakk hooks\` - removes pre-commit hooks
-  `.trim()
+  `.trim(),
   )
 }
 

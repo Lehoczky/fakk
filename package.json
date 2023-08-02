@@ -17,10 +17,10 @@
   "license": "MIT",
   "devDependencies": {
     "@types/minimist": "^1.2.2",
-    "@types/node": "^18.16.19",
-    "husky": "^8.0.0",
-    "prettier": "^2.8.8",
-    "rollup": "^3.25.1",
+    "@types/node": "^18.17.1",
+    "husky": "^8.0.3",
+    "prettier": "^3.0.0",
+    "rollup": "^3.27.0",
     "rollup-plugin-preserve-shebang": "^1.0.1",
     "rollup-plugin-typescript2": "^0.35.0",
     "tsx": "^3.12.7",
@@ -38,10 +38,10 @@
     "url": "https://github.com/Lehoczky/fakk.git",
     "type": "git"
   },
-  "packageManager": "pnpm@8.6.7",
+  "packageManager": "pnpm@8.6.11",
   "dependencies": {
     "consola": "^3.2.3",
-    "execa": "^7.1.1",
+    "execa": "^7.2.0",
     "minimist": "^1.2.8"
   }
 }

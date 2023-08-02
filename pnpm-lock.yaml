@@ -9,8 +9,8 @@ dependencies:
     specifier: ^3.2.3
     version: 3.2.3
   execa:
-    specifier: ^7.1.1
-    version: 7.1.1
+    specifier: ^7.2.0
+    version: 7.2.0
   minimist:
     specifier: ^1.2.8
     version: 1.2.8
@@ -20,23 +20,23 @@ devDependencies:
     specifier: ^1.2.2
     version: 1.2.2
   "@types/node":
-    specifier: ^18.16.19
-    version: 18.16.19
+    specifier: ^18.17.1
+    version: 18.17.1
   husky:
-    specifier: ^8.0.0
-    version: 8.0.0
+    specifier: ^8.0.3
+    version: 8.0.3
   prettier:
-    specifier: ^2.8.8
-    version: 2.8.8
+    specifier: ^3.0.0
+    version: 3.0.0
   rollup:
-    specifier: ^3.25.1
-    version: 3.25.1
+    specifier: ^3.27.0
+    version: 3.27.0
   rollup-plugin-preserve-shebang:
     specifier: ^1.0.1
     version: 1.0.1
   rollup-plugin-typescript2:
     specifier: ^0.35.0
-    version: 0.35.0(rollup@3.25.1)(typescript@5.1.6)
+    version: 0.35.0(rollup@3.27.0)(typescript@5.1.6)
   tsx:
     specifier: ^3.12.7
     version: 3.12.7
@@ -357,10 +357,10 @@ packages:
       }
     dev: true
 
-  /@types/node@18.16.19:
+  /@types/node@18.17.1:
     resolution:
       {
-        integrity: sha512-IXl7o+R9iti9eBW4Wg2hx1xQDig183jj7YLn8F7udNceyfkbn1ZxmzZXuak20gR40D7pIkIY1kYGx5VIGbaHKA==,
+        integrity: sha512-xlR1jahfizdplZYRU59JlUx9uzF1ARa8jbhM11ccpCJya8kvos5jwdm2ZAgxSCwOl0fq21svP18EVwPBXMQudw==,
       }
     dev: true
 
@@ -438,10 +438,10 @@ packages:
       }
     dev: true
 
-  /execa@7.1.1:
+  /execa@7.2.0:
     resolution:
       {
-        integrity: sha512-wH0eMf/UXckdUYnO21+HDztteVv05rq2GXksxT4fCGeHkBhw1DROXh40wcjMcRqDOWE7iPJ4n3M7e2+YFP+76Q==,
+        integrity: sha512-UduyVP7TLB5IcAQl+OzLyLcS/l32W/GLg+AhHJ+ow40FOk2U3SAllPwR44v4vmdFwIWqpdwxxpQbF1n5ta9seA==,
       }
     engines: { node: ^14.18.0 || ^16.14.0 || >=18.0.0 }
     dependencies:
@@ -534,10 +534,10 @@ packages:
     engines: { node: ">=14.18.0" }
     dev: false
 
-  /husky@8.0.0:
+  /husky@8.0.3:
     resolution:
       {
-        integrity: sha512-4qbE/5dzNDNxFEkX9MNRPKl5+omTXQzdILCUWiqG/lWIAioiM5vln265/l6I2Zx8gpW8l1ukZwGQeCFbBZ6+6w==,
+        integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==,
       }
     engines: { node: ">=14" }
     hasBin: true
@@ -720,12 +720,12 @@ packages:
       find-up: 4.1.0
     dev: true
 
-  /prettier@2.8.8:
+  /prettier@3.0.0:
     resolution:
       {
-        integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==,
+        integrity: sha512-zBf5eHpwHOGPC47h0zrPyNn+eAEIdEzfywMoYn2XPi0P44Zp0tSq64rq0xAREh4auw2cJZHo9QUob+NqCQky4g==,
       }
-    engines: { node: ">=10.13.0" }
+    engines: { node: ">=14" }
     hasBin: true
     dev: true
 
@@ -745,7 +745,7 @@ packages:
       magic-string: 0.25.9
     dev: true
 
-  /rollup-plugin-typescript2@0.35.0(rollup@3.25.1)(typescript@5.1.6):
+  /rollup-plugin-typescript2@0.35.0(rollup@3.27.0)(typescript@5.1.6):
     resolution:
       {
         integrity: sha512-szcIO9hPUx3PhQl91u4pfNAH2EKbtrXaES+m163xQVE5O1CC0ea6YZV/5woiDDW3CR9jF2CszPrKN+AFiND0bg==,
@@ -757,16 +757,16 @@ packages:
       "@rollup/pluginutils": 4.2.1
       find-cache-dir: 3.3.2
       fs-extra: 10.1.0
-      rollup: 3.25.1
+      rollup: 3.27.0
       semver: 7.5.4
       tslib: 2.6.0
       typescript: 5.1.6
     dev: true
 
-  /rollup@3.25.1:
+  /rollup@3.27.0:
     resolution:
       {
-        integrity: sha512-tywOR+rwIt5m2ZAWSe5AIJcTat8vGlnPFAv15ycCrw33t6iFsXZ6mzHVFh2psSjxQPmI+xgzMZZizUAukBI4aQ==,
+        integrity: sha512-aOltLCrYZ0FhJDm7fCqwTjIUEVjWjcydKBV/Zeid6Mn8BWgDCUBBWT5beM5ieForYNo/1ZHuGJdka26kvQ3Gzg==,
       }
     engines: { node: ">=14.18.0", npm: ">=8.0.0" }
     hasBin: true
