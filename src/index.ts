@@ -7,8 +7,13 @@ const argv = minimist(process.argv.slice(2))
 
 if (argv._.includes("hooks")) {
   removeGitHooks()
-} else {
+} else if (isEmpty(argv._)) {
   undoLastCommit()
+} else {
+  if (!argv._.includes("help")) {
+    consola.error("Unsupported command.")
+  }
+  help()
 }
 
 function removeGitHooks() {
@@ -39,4 +44,18 @@ function undoLastCommit() {
 
     process.exit(1)
   }
+}
+
+function help() {
+  consola.box(
+    `Usage:
+
+\`fakk\`       - undo last commit
+\`fakk hooks\` - removes pre-commit hooks
+  `.trim()
+  )
+}
+
+function isEmpty(value: unknown[]) {
+  return value.length === 0
 }
