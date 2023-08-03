@@ -16,6 +16,7 @@
   "type": "module",
   "license": "MIT",
   "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.3",
     "@types/minimist": "^1.2.2",
     "@types/node": "^18.17.1",
     "husky": "^8.0.3",
