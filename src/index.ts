@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { consola } from "consola"
 import minimist from "minimist"
-import { execaSync } from "execa"
+import { $ } from "execa"
 
 const argv = minimist(process.argv.slice(2))
 
@@ -16,16 +16,16 @@ if (argv._.includes("hooks")) {
   help()
 }
 
-function removeGitHooks() {
+async function removeGitHooks() {
   try {
-    execaSync("git config --unset core.hooksPath")
+    await $("git", ["config", "--unset", "core.hooksPath"])
     consola.success("Git hooks are removed successfully")
   } catch (error) {}
 }
 
-function undoLastCommit() {
+async function undoLastCommit() {
   try {
-    execaSync("git reset HEAD~")
+    await $("git", ["reset", "HEAD~"])
     consola.success("Last commit has been undone successfully")
   } catch (error) {
     const errorMessage: string = error.toString()

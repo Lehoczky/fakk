@@ -2,30 +2,33 @@
   "name": "@lehoczky/fakk",
   "version": "1.1.5",
   "description": "Undo your last commit with ease",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsup",
+    "prepare": "husky"
+  },
   "bin": {
     "fakk": "dist/index.mjs"
   },
   "files": [
     "dist/"
   ],
-  "scripts": {
-    "dev": "tsx src/index.ts",
-    "build": "rollup -c",
-    "prepare": "husky install"
-  },
   "type": "module",
   "license": "MIT",
+  "dependencies": {
+    "consola": "^3.2.3",
+    "execa": "^9.3.0",
+    "minimist": "^1.2.8"
+  },
   "devDependencies": {
-    "@rollup/plugin-terser": "^0.4.3",
-    "@types/minimist": "^1.2.2",
-    "@types/node": "^18.17.1",
-    "husky": "^8.0.3",
-    "prettier": "^3.0.0",
-    "rollup": "^3.27.0",
-    "rollup-plugin-preserve-shebang": "^1.0.1",
-    "rollup-plugin-typescript2": "^0.35.0",
-    "tsx": "^3.12.7",
-    "typescript": "^5.1.6"
+    "@rollup/plugin-terser": "^0.4.4",
+    "@types/minimist": "^1.2.5",
+    "@types/node": "^20.14.9",
+    "husky": "^9.0.11",
+    "prettier": "^3.3.2",
+    "tsup": "^8.1.0",
+    "tsx": "^4.15.7",
+    "typescript": "^5.5.2"
   },
   "publishConfig": {
     "access": "public"
@@ -39,10 +42,5 @@
     "url": "https://github.com/Lehoczky/fakk.git",
     "type": "git"
   },
-  "packageManager": "pnpm@8.6.11",
-  "dependencies": {
-    "consola": "^3.2.3",
-    "execa": "^7.2.0",
-    "minimist": "^1.2.8"
-  }
+  "packageManager": "pnpm@9.4.0"
 }
