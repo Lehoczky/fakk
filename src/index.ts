@@ -1,34 +1,42 @@
 #!/usr/bin/env node
 import { consola } from "consola"
-import minimist from "minimist"
 import { $ } from "execa"
 
-const argv = minimist(process.argv.slice(2))
+const command: string | undefined = process.argv[2]
 
-if (argv._.includes("hooks")) {
+if (command === "hooks") {
   removeGitHooks()
-} else if (isEmpty(argv._)) {
+} else if (command === undefined) {
   undoLastCommit()
 } else {
-  if (!argv._.includes("help")) {
+  if (command !== "help") {
     consola.error("Unsupported command.")
   }
   help()
 }
 
+/**
+ * Source: https://stackoverflow.com/a/76849002/10876366
+ */
 async function removeGitHooks() {
   try {
     await $("git", ["config", "--unset", "core.hooksPath"])
     consola.success("Git hooks are removed successfully")
-  } catch (error) {}
+  } catch (error) {
+    consola.error("Failed to remove git hooks")
+  }
 }
 
+/**
+ * Source: https://stackoverflow.com/a/927386/10876366
+ */
 async function undoLastCommit() {
   try {
     await $("git", ["reset", "HEAD~"])
     consola.success("Last commit has been undone successfully")
   } catch (error) {
-    const errorMessage: string = error.toString()
+    const errorMessage: string =
+      error instanceof Error ? error.toString() : String(error)
 
     if (errorMessage.includes("not a git repository")) {
       consola.error("You can only run this command from a git repository")
@@ -54,8 +62,4 @@ function help() {
 \`fakk hooks\` - removes pre-commit hooks
   `.trim(),
   )
-}
-
-function isEmpty(value: unknown[]) {
-  return value.length === 0
 }

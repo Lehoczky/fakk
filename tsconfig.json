@@ -5,8 +5,8 @@
     "target": "ESNext",
     "outDir": "dist",
     "sourceMap": false,
-    "rootDir": "src"
+    "rootDir": "src",
+    "strict": true
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": ["src/**/*.ts"]
 }
