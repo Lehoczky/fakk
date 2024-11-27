@@ -14,8 +14,8 @@ jobs:
       - name: Check out Git repository ⏬
         uses: actions/checkout@v4
 
-      - name: Enable Corepack 💠
-        run: corepack enable
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
 
       - name: Set up Node.js 💿
         uses: actions/setup-node@v4

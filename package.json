@@ -39,5 +39,5 @@
     "url": "git+https://github.com/Lehoczky/fakk.git",
     "type": "git"
   },
-  "packageManager": "pnpm@9.12.3"
+  "packageManager": "pnpm@9.14.2"
 }
